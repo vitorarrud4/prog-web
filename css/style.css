@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#caixa-buscar{
+    background-color: ffffff;
+    border: solid 0,5px;
+    border-radius: 30px;
+    width: 720px;
+    height: 48px;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+#txtBusca{
+    float: left;
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-top: 16px;
+    font-style: normal;
+    font-size: 17px;
+    border: none;
+    height: 32px;
+    width: 260px;
+}
+
+#imagem-lupa{
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+#logo{
+    padding-left: 50px;
+}
+
+.alerta-preco{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: medium;
+    font-style: normal;
+    border: silver;
+    border-style: solid;
+    padding: 1%;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+.menu{
+    font-style: normal;
+    color: white;
+    font-size: 8px;
+    margin-top: 22px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-menu{
+    margin-top: 22px;
+    margin-left: 60px;
+}
+
+#botao-entrar{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.capa-anuncio{
+    margin-top: 25px;
+    background-color: #582c92;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 12px;
+    width: 1138px;
+}
+
+.celular{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    border: silver;
+    border-style: solid;
+    padding: 5px;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+.notebook{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: silver;
+    border-style: solid;
+    padding: 15px;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+.tv{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: silver;
+    border-style: solid;
+    padding: 15px;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+.geladeira{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: silver;
+    border-style: solid;
+    padding: 15px;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+.fogao{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: silver;
+    border-style: solid;
+    padding: 15px;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+.pechincha{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: silver;
+    border-style: solid;
+    padding: 15px;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+.mais-cat{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: silver;
+    border-style: solid;
+    padding: 15px;
+    border-width: thin;
+    border-radius: 15px;
+}
