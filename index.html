@@ -1,109 +1,82 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Compare preços no Zoom: Reunimos as melhores ofertas e descontos!</title>
-        <link href="css/style.css" rel="stylesheet"/>
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0, maximum-scale=1.0">
-        <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16"> <!--fav icon-->
-        <style>
-            body{
-                background-image: url(img/bg.jpg);
-                background-repeat: no-repeat;
-                background-size: 100% 10%;
-            }
-        </style>
     </head>
 
     <body>
+
         <header>
-            
-            <div class="center">
+         
+            <div class="iconeMenu">
+                <img src="img/icon-menu.png" alt="icone-menu"> <!--ICONE DO MENU-->
+                <span>Menu</span>
+            </div> <!--div menu-->
 
-            <div class="icon-menu">
-                <img src="img/icon-menu.png" width="15px" height="15px">
-            </div> <!--icon-menu-->
-            
-            <div class="menu">
-                <h1>Menu</h1>
-            </div> <!--menu-->
+            <div class="logo">
+                <a href="#"><img id="logo" src="img/logo-white.png"></a> <!--LOGO PRINCIPAL-->
+            </div> <!--div logo-->
 
-            <div id="logo">
-                <a href="index.html"><img src="img/logo-white.svg" alt="image" width="110px" height="62px"/></a>
-            </div> <!--logo-->
-
-            <div id="caixa-buscar">
-                <input type="text" id="txtBusca" placeholder="Digite sua busca..."/>
-                <div id="imagem-lupa"><img src="img/lupa-busca.png" width="20" height="20" style="float: right" id="btnBusca" alt="Buscar"/></div> <!--div somente para imagem TESTE-->
+            <div id="barraPesquisa">
+                <input id="txtBusca" type="text" placeholder="Digite sua busca..."/>
+                <div id="imagem-lupa"><img src="img/lupa-busca.png" id="btnBusca" alt="Buscar"/></div> <!--div para a imagem da lupa-->
             </div> <!--caixa-buscar-->
 
-            <div id="botao-entrar">
-            <a href="#">
-                <button style="border-radius: 6px; padding: 15px; cursor: pointer; color: #3790f8; border: 0,5px; border-color: #3790f8; height: 48px; width: 110px; font-size: 16px;">Entrar</button></a>
+            <div class="botaoEntrar">
+                <a href="#">
+                    <button style="border-radius: 6px; padding: 15px; cursor: pointer; color: #3790f8; border: 0,5px; border-color: #3790f8; height: 48px; width: 110px; font-size: 18px; text-align: center;">Entrar</button>
+                </a>
+            </div> <!--div botaoEntrar-->
+        </header> <!--fim header-->
+
+        <section class="alertaPreco">
+            <a href="#">Saiba como criar um Alerta de Preço para não perder as melhores ofertas</a>
+        </section> <!--sectionalertaPreco-->
+
+        <section class="imagem-anuncio">
+                <img id="anuncioDesktop" src="img/capa-anuncio.png" alt="propaganda1"> <!--IMAGEM PROPAGANDA-->
+                <img id="anuncioMobile" src="img/capa-anuncio-mobile.png" alt="propaganda2"> <!--IMAGEM PROPAGANDA-->
+        </section>
+
+        <section class="icones">
+            <div>
+                <img src="img/icon-celular.png" alt="celular"> <!--ICONE CELULAR-->
+                <p>Celular</p>
             </div>
 
-            </div> <!--center-->
+            <div>
+                <img src="img/icon-notebook.png" alt="notebook"> <!--ICONE NOTEBOOK-->
+                <p>Notebook</p>
+            </div>
 
-        </header>        
+            <div>
+                <img src="img/icon-tv.png" alt="tv"> <!--ICONE TV-->
+                <p>TV</p>
+            </div>
 
-        <div class="alerta-preco">
-            <a href="#" style="text-decoration: none;">
-                <h4>Saiba como criar um Alerta de Preço para não perder as melhores ofertas</h4>
-            </a>
-        </div>
+            <div>
+                <img src="img/icon-geladeira.png" alt="geladeira"> <!--ICONE GELADEIRA-->
+                <p>Geladeira</p>
+            </div>
 
-        <div class="capa-anuncio">
-            <a href="#">
-                <img src="img/capa-anuncio.png" width="1138px" height="336px">
-            </a>
-        </div> <!--capa-anuncio-->
+            <div>
+                <img src="img/icon-fogao.png" alt="fogao"> <!--ICONE FOGAO-->
+                <p>Fogão</p>
+            </div>
 
-        <div class="center">
+            <div>
+                <img src="img/icon-pechincha.png" alt="pechincha"> <!--ICONE PECHINCHA-->
+                <p>Pechinchas</p>
+            </div>
 
-        <div class="celular">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-celular.svg" width="40px">Celular</p>
-            </a>
-        </div> <!--celular-->
+            <div>
+                <img src="img/icon-mais-cat.png" alt="mais-categoria"> <!--ICONE MAIS CATEGORIA-->
+                <p>Mais categorias</p>
+            </div>
+        </section> <!--section icones-->
 
-        <div class="Notebook">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-notebook.svg" width="40px">Notebook</p>
-            </a>
-        </div> <!--notebook-->
-
-        <div class="tv">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-tv.svg" width="40px">TV</p>
-            </a>
-        </div> <!--tv-->
-
-        <div class="geladeira">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-geladeira.svg" width="40px">Geladeira</p>
-            </a>
-        </div> <!--geladeira-->
-
-        <div class="fogao">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-fogao.svg" width="40px">Fogão</p>
-            </a>
-        </div> <!--fogao-->
-
-        <div class="pechincha">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-pechincha.svg" width="40px">Pechinchas</p>
-            </a>
-        </div> <!--pechinchas-->
-
-        <div class="mais-cat">
-            <a href="#" style="text-decoration: none;">
-                <p><img src="img/icon-mais-cat.svg" width="40px">Mais Categorias</p>
-            </a>
-        </div> <!--mais categorias-->
-    </div> <!--center novamente para organizar os hiperlink de baixo-->
     </body>
 </html>
-
-
-
-<!--CODIGO DA COR DO BACKGROUND: #54217c-->

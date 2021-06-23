@@ -1,170 +1,204 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.center{
+body {
+    font-family: sans-serif;
+}
+
+header {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2%;
+    flex-direction: row;
+    background-color: #612a92;
+    color: white;
+    justify-content:left;
+    width: 100%;
 }
 
-html, body{
-    height: 100%;
-    overflow-y: hidden;
+header div {
+    margin: 0.6%;
 }
 
-#caixa-buscar{
-    background-color: ffffff;
-    border: solid 0,5px;
-    border-radius: 30px;
-    width: 720px;
-    height: 48px;
+.iconeMenu {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.iconeMenu span {
+    margin-left: 10px;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.botaoEntrar{
+    margin-top: 10px;
+    margin-left: 50px;
+    max-width: 42px;
+}
+
+#barraPesquisa {
+    position: relative;
+    width: 55%;
     margin-left: 30px;
-    margin-top: 7px;
-}
-
-#txtBusca{
-    float: left;
-    text-align: justify;
-    background-color: transparent;
-    padding-left: 20px;
-    padding-top: 16px;
-    font-style: normal;
-    font-size: 17px;
-    border: none;
-    height: 32px;
-    width: 260px;
 }
 
 #imagem-lupa{
-    float: right;
-    padding-right: 20px;
-    padding-top: 15px;
+    position: absolute;
+    right: 0px;
+    top: 23.5%;
+    opacity: 0.3;
 }
 
-#logo{
-    padding-left: 50px;
-}
+#txtBusca{
+    margin: 0px;
+    outline: none;
+    float: left;
+    background-color: white;
+    padding-left: 20px;
+    font-size:18px;
+    border: none;
+    width: 100%;
+    border: solid 0,5px;
+    border-radius: 50px;
+    border-color: white;
+    height: 50px;
+  }
 
-.alerta-preco{
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
-    font-size: medium;
-    font-style: normal;
-    border: silver;
-    border-style: solid;
-    padding: 1%;
-    border-width: thin;
-    border-radius: 10px;
-}
-
-.menu{
-    font-style: normal;
-    color: white;
-    font-size: 8px;
-    margin-top: 22px;
-    margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.icon-menu{
-    margin-top: 22px;
-    margin-left: 60px;
-}
-
-#botao-entrar{
-    margin-top: 7px;
-    margin-left: 20px;
-}
-
-.capa-anuncio{
+.alertaPreco {
     margin-top: 25px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+    border-style: solid;
+    border-width: thin;
+    padding: 15px;
+}
+
+.alertaPreco a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 13.5px;
+}
+
+.imagem-anuncio {
+    margin-left: 90px;
+    margin-right: 90px;
+    align-items: center;
     background-color: #582c92;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 12px;
-    width: 1138px;
+    border-radius: 20px;
+    min-width: 400px;
 }
 
-.celular{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 80px;
-    border: silver;
+.imagem-anuncio #anuncioMobile {
+    display: none;
+}
+
+.icones {
+    display: flex;
+    margin-left: 30px;
+}
+
+.icones div {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    align-items: center;
+    border-radius: 50px;
+    border-color: #d1d1d1;
     border-style: solid;
+    border-width: thin;
     padding: 5px;
-    border-width: thin;
-    border-radius: 15px;
+    margin-left: 50px;
 }
 
-.notebook{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border: silver;
-    border-style: solid;
-    padding: 15px;
-    border-width: thin;
-    border-radius: 15px;
+@media only screen and (max-width: 900px) {
+    header {
+        height: 129.2px;
+        position: relative;
+    }
+
+    #barraPesquisa {
+        position: absolute;
+        width: 90%;
+        right: 18px;
+        bottom: 0px;
+    }
+    
+    .iconeMenu span {
+        display: none;
+    }
+
+    .imagem-anuncio #anuncioDesktop {
+        display: none;
+    }
+
+    .imagem-anuncio #anuncioMobile {
+        display: block;
+        width: 100%;
+    }
 }
 
-.tv{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border: silver;
-    border-style: solid;
-    padding: 15px;
-    border-width: thin;
-    border-radius: 15px;
-}
+@media only screen and (max-width: 768px) {
+       
+        body {
+            overflow-x: hidden;
+        }
 
-.geladeira{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border: silver;
-    border-style: solid;
-    padding: 15px;
-    border-width: thin;
-    border-radius: 15px;
-}
+        .iconeMenu {
+            margin: 5%;
+            position: absolute;
+        }
 
-.fogao{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border: silver;
-    border-style: solid;
-    padding: 15px;
-    border-width: thin;
-    border-radius: 15px;
-}
+        .logo a {
+                 margin: 70%;
+        }
 
-.pechincha{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border: silver;
-    border-style: solid;
-    padding: 15px;
-    border-width: thin;
-    border-radius: 15px;
-}
+        .botaoEntrar {
+            margin-left: 40%;
+        }
+        
+        .imagem-anuncio #anuncioMobile {
+           width: auto;
+           margin: 0px 40px;
+           
+       }
+       .imagem-anuncio {
+           margin-left: 40px;
+           width: 100%;
+       }
 
-.mais-cat{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border: silver;
-    border-style: solid;
-    padding: 15px;
-    border-width: thin;
-    border-radius: 15px;
+       #barraPesquisa {
+            margin-bottom: 10px;
+       }
+
+       .alertaPreco {
+        margin: 40px;
+        width: 85%;
+        align-self: center;
+        padding: 15px;
+       }
+
+       .alertaPreco a {
+        max-width: 31.5ch;
+        overflow: hidden;
+        text-overflow: ellipsis clip;
+        white-space: nowrap;
+       }
+
+       .icones {
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+       }
 }
