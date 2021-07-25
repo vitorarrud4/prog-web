@@ -6,6 +6,8 @@ const messageError = document.querySelector(".messageError")
 const container = document.querySelector(".container")
 const footer = document.querySelector(".footer")
 const searchContainer = document.querySelector(".searchContainer")
+const btnSair = document.querySelector(".btnEntrar")
+const divMC = document.querySelector("div.modal-container")
 
 // funcionalidade nos botões e nos moldes
 
@@ -30,6 +32,11 @@ bEnter.onclick = () => {
             container.style.display = "none";
             footer.style.display = "none";
             searchContainer.style.display = "flex";
+            btnSair.innerHTML = "Sair";
+            btnSair.onclick = () => {
+                btnSair.innerHTML = "Entrar";
+                modalContainer.style.display = "none";
+            }
         } else {
             messageError.innerHTML = "Erro ao entrar"
         }
