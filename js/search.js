@@ -18,7 +18,7 @@ document.querySelector(".botaoPesquisa").addEventListener("click", function() {
                 cat = JSON.parse(xmlhttp.responseText)
                 img.src = cat.file
                 li.appendChild(img)
-                resultadoPesquisa.appendChild(li) 
+                resultadoPesquisa.appendChild(li)
             } else {
                 console.log("Erro ao acessar a API")
                 // console.log(xmlhttp.status)
