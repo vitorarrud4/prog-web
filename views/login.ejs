@@ -1,0 +1,17 @@
+<%- include('header'); -%>
+<div class="loginContainer">
+  <label for="email">Email</label>
+  <input id="email" type="email" name="email" placeholder="Email" required></input>
+  <label for="password">Senha</label>
+  <input
+    id="password"
+    type="password"
+    name="password"
+    placeholder="senha"
+    required
+  />
+  <span class="messageError"></span>
+  <button id="login">Entrar</button>
+</div>
+<script src="/javascripts/login.js"></script>
+<%- include('footer'); -%>

@@ -7,6 +7,12 @@ const loginController = require("../controllers/login.controller");
 router.get("/", function (req, res, next) {
   res.render("index", { title: "Express" });
 });
+router.get("/login", (req, res, next) => {
+  res.render("login");
+});
+router.get("/home", (req, res, next) => {
+  res.render("home");
+});
 
 router.post("/login", loginController.login);
 router.post("/token/validate", loginController.validateToken);

@@ -1,176 +1,72 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
-    <title>
-      Compare preços no Zoom: Reunimos as melhores ofertas e descontos!
-    </title>
-  </head>
+<%- include('header'); -%>
+<!-- <div class="modal-container">
+  <div class="modal">
+    <button class="closeButton">X</button>
+    <p>Login</p>
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      class="login-email"
+      placeholder="Insira o email"
+      value="eve.holt@reqres.in"
+    />
+    <label for="email">Senha</label>
+    <input
+      type="password"
+      name="senha"
+      class="login-password"
+      placeholder="Insira o email"
+    />
+    <span class="messageError"></span>
+    <button class="enterButton">Entrar</button>
+  </div>
+</div>
+<!-- <div class="searchContainer">
+  <button class="accessButon">Cadastro de usuário</button>
+  <button class="accessButon">Publicar conteúdo</button>
+  <button class="accessButon">Buscar conteúdo</button>
 
-  <body>
-    <header>
-      <div class="iconeMenu">
-        <img src="/images/icon-menu.png" alt="icone-menu" />
-        <!--ICONE DO MENU-->
-        <span>Menu</span>
-      </div>
-      <!--div menu-->
+ <h1>Pesquise seus conteúdos:</h1>
+  <div class="searchInput">
+    <input
+      type="text"
+      name="barraPesquisa"
+      class="barraPesquisa"
+      placeholder="Digite o nome do conteúdo"
+    />
+    <button class="botaoPesquisa">Pesquisar</button>
+  </div>
+  <ul class="resultadoPesquisa"></ul>
 
-      <div class="logo">
-        <a href="#"><img id="logo" src="/images/logo-white.png" /></a>
-        <!--LOGO PRINCIPAL-->
-      </div>
-      <!--div logo-->
+  <h2>Cadastrar novo usuário</h2>
+  <form>
+    <label for="email">Email</label>
+    <input type="email" name="email" />
+    <label for="password">Senha</label>
+    <input type="password" name="password" />
+  </form>
+</div> -->
 
-      <div id="barraPesquisa">
-        <input id="txtBusca" type="text" placeholder="Digite sua busca..." />
-        <div id="imagem-lupa">
-          <img src="/images/lupa-busca.png" id="btnBusca" alt="Buscar" />
-        </div>
-        <!--div para a imagem da lupa-->
-      </div>
-      <!--caixa-buscar-->
+<div class="container">
+  <section class="alertaPreco">
+    <a href="#"
+      >Saiba como criar um Alerta de Preço para não perder as melhores
+      ofertas</a
+    >
+  </section>
+  <!--sectionalertaPreco-->
 
-      <div class="botaoEntrar">
-        <button class="btnEntrar">Entrar</button>
-      </div>
-      <!--div botaoEntrar-->
-    </header>
-    <!--fim header-->
-    <div class="modal-container">
-      <div class="modal">
-        <button class="closeButton">X</button>
-        <p>Login</p>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          class="login-email"
-          placeholder="Insira o email"
-          value="eve.holt@reqres.in"
-        />
-        <label for="email">Senha</label>
-        <input
-          type="password"
-          name="senha"
-          class="login-password"
-          placeholder="Insira o email"
-        />
-        <span class="messageError"></span>
-        <button class="enterButton">Entrar</button>
-      </div>
-    </div>
-    <div class="searchContainer">
-      <h1>Pesquise seus conteúdos:</h1>
-      <div class="searchInput">
-        <input
-          type="text"
-          name="barraPesquisa"
-          class="barraPesquisa"
-          placeholder="Digite o nome do conteúdo"
-        />
-        <button class="botaoPesquisa">Pesquisar</button>
-      </div>
-      <ul class="resultadoPesquisa"></ul>
-
-      <h2>Cadastrar novo usuário</h2>
-      <form>
-        <label for="email">Email</label>
-        <input type="email" name="email" />
-        <label for="password">Senha</label>
-        <input type="password" name="password" />
-      </form>
-    </div>
-
-    <div class="container">
-      <section class="alertaPreco">
-        <a href="#"
-          >Saiba como criar um Alerta de Preço para não perder as melhores
-          ofertas</a
-        >
-      </section>
-      <!--sectionalertaPreco-->
-
-      <section class="imagem-anuncio">
-        <img
-          id="anuncioDesktop"
-          src="/images/capa-anuncio.png"
-          alt="propaganda1"
-        />
-        <!--IMAGEM PROPAGANDA-->
-        <img
-          id="anuncioMobile"
-          src="/images/capa-anuncio-mobile.png"
-          alt="propaganda2"
-        />
-        <!--IMAGEM PROPAGANDA-->
-      </section>
-    </div>
-    <!--div container-->
-
-    <div class="footer">
-      <section class="icones">
-        <div>
-          <img src="/images/icon-celular.png" alt="celular" />
-          <!--ICONE CELULAR-->
-          <p>Celular</p>
-        </div>
-        <!--div celular-->
-
-        <div>
-          <img src="/images/icon-notebook.png" alt="notebook" />
-          <!--ICONE NOTEBOOK-->
-          <p>Notebook</p>
-        </div>
-        <!--div notebook-->
-
-        <div>
-          <img src="/images/icon-tv.png" alt="tv" />
-          <!--ICONE TV-->
-          <p>TV</p>
-        </div>
-        <!--div tv-->
-
-        <div>
-          <img src="/images/icon-geladeira.png" alt="geladeira" />
-          <!--ICONE GELADEIRA-->
-          <p>Geladeira</p>
-        </div>
-        <!--div geladeira-->
-
-        <div>
-          <img src="/images/icon-fogao.png" alt="fogao" />
-          <!--ICONE FOGAO-->
-          <p>Fogão</p>
-        </div>
-        <!--div fogao-->
-
-        <div>
-          <img src="/images/icon-pechincha.png" alt="pechincha" />
-          <!--ICONE PECHINCHA-->
-          <p>Pechinchas</p>
-        </div>
-        <!--div pechinchas-->
-
-        <div>
-          <img
-            id="maiscat"
-            src="/images/icon-mais-cat.png"
-            alt="mais-categoria"
-          />
-          <!--ICONE MAIS CATEGORIA-->
-          <p>Mais categorias</p>
-        </div>
-        <!--div mais categorias-->
-      </section>
-      <!--section icones-->
-    </div>
-    <!--div footer-->
-
-    <script src="/javascripts/login.js"></script>
-    <script src="/javascripts/search.js"></script>
-  </body>
-</html>
+  <section class="imagem-anuncio">
+    <img id="anuncioDesktop" src="/images/capa-anuncio.png" alt="propaganda1" />
+    <!--IMAGEM PROPAGANDA-->
+    <img
+      id="anuncioMobile"
+      src="/images/capa-anuncio-mobile.png"
+      alt="propaganda2"
+    />
+    <!--IMAGEM PROPAGANDA-->
+  </section>
+</div>
+<!--div container-->
+<%- include('footer'); -%>
