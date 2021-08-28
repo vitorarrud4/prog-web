@@ -1,0 +1,23 @@
+<%- include('header'); -%>
+<script src="/javascripts/validate-token.js"></script>
+<script src="/javascripts/control-session.js"></script>
+<div class="loginContainer">
+    <h1>Novo usuário</h1>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="Email" required></input>
+    <label for="password">Senha</label>
+    <input
+      id="password"
+      type="password"
+      name="password"
+      placeholder="senha"
+      required
+    />
+    <span class="messageError"></span>
+    <div>
+        <button id="addUser">Cadastrar</button>
+        <button onclick="window.location = '/home'">Menu</button>
+    </div>
+</div>
+<script src="/javascripts/add-user.js"></script>
+<%- include('footer'); -%>

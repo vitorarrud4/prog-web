@@ -250,6 +250,14 @@ header {
   align-items: center;
 }
 
+.newUserContainer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   header {
     padding-bottom: 82px;
