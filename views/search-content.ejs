@@ -1,0 +1,13 @@
+<%- include('header'); -%>
+<script src="/javascripts/validate-token.js"></script>
+<script src="/javascripts/control-session.js"></script>
+<div class="searchBox">
+  <div class="inputBox">
+    <label for="name">Nome do conteúdo</label>
+    <input type="text" id="name" required />
+  </div>
+  <button class="searchButton" id="searchButton">Buscar</button>
+</div>
+<ul class="resultContainer" id="resultContainer"></ul>
+<script src="/javascripts/find-content.js"></script>
+<%- include('footer'); -%>

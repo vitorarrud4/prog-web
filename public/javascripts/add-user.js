@@ -14,7 +14,7 @@ const addUser = async (email, password) => {
     },
     body: JSON.stringify({ email, password }),
   });
-  if (response.status === 403)
+  if (response.status === 401)
     throw new Error("Sessão expirada, realize login novamente");
   if (response.status === 400) throw new Error("Email já cadastrado!");
   return true;

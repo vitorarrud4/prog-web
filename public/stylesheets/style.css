@@ -258,6 +258,41 @@ header {
   align-items: center;
 }
 
+.searchBox {
+  display: flex;
+  justify-content: center;
+  height: 100;
+  margin-top: 150px;
+  align-items: end;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.searchButton {
+  margin-left: 50px;
+  height: 30px;
+  width: 100px;
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  list-style: none;
+}
+
+.resultName {
+  text-align: center;
+}
+
+.resultItem:not(:first-child) {
+  margin-left: 25px;
+}
+
 @media only screen and (max-width: 768px) {
   header {
     padding-bottom: 82px;

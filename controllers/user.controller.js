@@ -1,11 +1,13 @@
-const loginModel = require("../models/login.model");
+const { v4: uuidv4 } = require("uuid");
+const userModel = require("../models/user.model");
 
 const addNewUser = (req, res) => {
   const { email, password } = req.body;
   try {
-    const foundEmail = loginModel.findByEmail(email);
+    const foundEmail = userModel.findByEmail(email);
     if (foundEmail) throw new Error("User already exists");
-    loginModel.addUser(email, password);
+    const id = uuidv4();
+    userModel.addUser(id, email, password);
     res.status(200).send("User added!");
   } catch (error) {
     console.log("!!!", error);

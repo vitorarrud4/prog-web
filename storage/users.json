@@ -1,7 +1,17 @@
 [
   {
+    "id": "6286adca-99ff-4ad3-a711-c7b96043c65c",
     "email": "usuario1@email.com",
     "password": "senha123"
   },
-  { "email": "usuario2@email.com", "password": "senha123" }
+  {
+    "id": "8da43288-05ef-484b-8106-7dc1b47100af",
+    "email": "usuario2@email.com",
+    "password": "senha123"
+  },
+  {
+    "id": "06e1ad9e-68a1-42d9-8f5d-d58ded5b5074",
+    "email": "usuario3@email.com",
+    "password": "senha123"
+  }
 ]
