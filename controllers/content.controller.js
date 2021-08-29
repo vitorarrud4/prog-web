@@ -14,4 +14,18 @@ const findContent = (req, res) => {
   }
 };
 
-module.exports = { findContent };
+const addContent = (req, res) => {
+  const userId = req.user.id;
+  const { filename: name } = req.body;
+  const { filename } = req.file;
+  try {
+    contentModel.addContent(name, filename, userId);
+    res.status(200).send("Image uploaded!");
+  } catch (error) {
+    let status = 500;
+    if (error.message === "Content duplicated") status = 400;
+    res.status(status).send(error.message);
+  }
+};
+
+module.exports = { findContent, addContent };

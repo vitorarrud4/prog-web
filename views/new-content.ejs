@@ -1,0 +1,18 @@
+<%- include('header'); -%>
+<script src="/javascripts/validate-token.js"></script>
+<script src="/javascripts/control-session.js"></script>
+<div class="searchBox">
+  <form>
+    <label for="filename">Nome do conteúdo</label>
+    <input id="filename" type="text" name="filename" required />
+    <input id="content" type="file" name="content" required />
+    <button class="searchButton" type="submit" id="publishButton">
+      Publicar
+    </button>
+    <button class="searchButton" onclick="window.location = '/home'">
+      Menu
+    </button>
+  </form>
+</div>
+<script src="/javascripts/add-content.js"></script>
+<%- include('footer'); -%>

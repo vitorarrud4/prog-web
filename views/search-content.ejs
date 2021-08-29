@@ -6,7 +6,12 @@
     <label for="name">Nome do conteúdo</label>
     <input type="text" id="name" required />
   </div>
-  <button class="searchButton" id="searchButton">Buscar</button>
+  <div>
+    <button class="searchButton" id="searchButton">Buscar</button>
+    <button class="searchButton" onclick="window.location = '/home'">
+      Menu
+    </button>
+  </div>
 </div>
 <ul class="resultContainer" id="resultContainer"></ul>
 <script src="/javascripts/find-content.js"></script>
